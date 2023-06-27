@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BGCOLOR: radial-gradient(#5c5c5c, #252525);
+  --BG-GREEN: radial-gradient(#179c17, #006400, #043104, #022702);
+  --GOLDEN: goldenrod;
+  --SHADOW: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  min-height: 90vh;
+  background: var(--BG-GREEN);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form {
+  background: var(--BGCOLOR);
+  padding: 2.2rem;
+  box-shadow: var(--SHADOW);
+  border-radius: 24px;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  font-size: 1.5rem;
+  color: var(--GOLDEN);
+  text-shadow: var(--SHADOW);
+}
+
+.form h1 {
+  color: whitesmoke;
+  margin: 1.5rem 0;
+  font-size: 2.2rem;
+  white-space: nowrap;
+  letter-spacing: 0.1rem;
+  text-shadow: var(--SHADOW);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  box-shadow: var(--SHADOW);
+}
+
+input:focus {
+  transition: 0.2s;
+  border: 3px solid var(--GOLDEN);
+  transform: scale(1.05);
+}
+
+.btn {
+  width: 40%;
+  height: 2.5rem;
+  border-radius: 16px;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  box-shadow: var(--SHADOW);
+}
+
+.btn:hover, .btn:focus {
+  transition: 0.3s;
+  color: var(--GOLDEN);
+  background-color: rgb(37, 37, 37);
+  border: 1px solid var(--GOLDEN);
+}
+
+.btn:active {
+  transform: scale(1.1);
+}

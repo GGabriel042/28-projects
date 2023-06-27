@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+}
+
+.main-container {
+  max-width: 550px;
+  padding: 0.5rem;
+}
+
+.main-container img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+.main-container h1 {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.main-container p {
+  color: whitesmoke;
+  margin: 1rem 0;
+}
+
+.btn {
+  background-color: whitesmoke;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+.trailer-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity .4s;
+}
+
+.active.trailer-container {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.trailer-container video {
+  position: relative;
+  max-width: 900px;
+  outline: none;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+  .trailer-container video {
+    max-width: 90%;
+  }
+}

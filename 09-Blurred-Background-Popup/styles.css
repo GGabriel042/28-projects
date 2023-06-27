@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  padding: 0.6rem 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: rgb(228, 124, 27);
+  border: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+
+.popup-container {
+  position: fixed;
+  width: 400px;
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  background: url("https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  font-family: sans-serif;
+  color: blueviolet;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  font-family: sans-serif;
+  color: blueviolet;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.popup-btn {
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: rgb(228, 124, 27);
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  border: 2px solid darkgray;
+}
+
+.input {
+  border: 2px solid darkgray;
+  padding: 1.2rem;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-icon:hover, .close-icon:focus {
+  color: orangered;
+}
+
+.active.popup-container {
+  visibility: hidden;
+}

@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.top-container {
+  background-image: url("https://images.unsplash.com/photo-1687201363580-1cd1bb33c2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.text {
+  margin: 3rem 5%;
+  font-family: sans-serif;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: #9E0000;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  font-family: cursive;
+  transition: background-color 0.4s;
+}
+
+.nav-bar ul li a:hover{
+  color: black;
+}
+
+.nav-bar.active{
+  background-color: black;
+}
+
+.nav-bar.active ul li a{
+  color: whitesmoke;
+}
+
+.nav-bar.active ul li a:hover{
+  color: #9E0000;
+}

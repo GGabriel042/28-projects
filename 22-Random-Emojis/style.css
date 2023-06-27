@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: aliceblue;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button{
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 3rem;
+  font-size: 4rem;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  filter: grayscale();
+  transition: filter .2s ease-in-out;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  filter: grayscale(0);
+}
+
+p {
+  font-weight: 600;
+  color: darkblue;
+  font-size: 1.3rem;
+}

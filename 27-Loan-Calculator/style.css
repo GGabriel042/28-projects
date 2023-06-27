@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+.container {
+  background-color: darkcyan;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+.input {
+  width: 100%;
+  font-size: 20px;
+  height: 30px;
+}
+
+.payment {
+  font-weight: 600;
+  font-size: 20px;
+}
